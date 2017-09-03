@@ -1,4 +1,20 @@
+@font-face {
+    font-family: ProximaRegular;
+    src: url("../fonts/ProximaNovaRegular.otf");
+}
+
+@font-face {
+    font-family: ProximaThin;
+    src: url("../fonts/ProximaNovaThin.otf");
+}
+
+@font-face {
+    font-family: ProximaBold;
+    src: url("../fonts/ProximaNovaBold.otf");
+}
+
 body {
+    font-family: ProximaRegular;
     margin: 0;
     padding: 0;
 }
@@ -11,4 +27,43 @@ body {
     background-position: center;
     position: relative;
     overflow: hidden;
+}
+
+.navbar-default {
+    background: transparent;
+    border: none;
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.navbar-brand>img {
+    position: relative;
+    height: 300%;
+    bottom: 10px;
+    width: auto;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: ProximaBold;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FF0000;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li.active a {
+    background: transparent;
+    border-bottom: 3px solid #FF0000;
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav>li.active a:hover {
+    background: transparent;
+    color: #FF0000;
 }
