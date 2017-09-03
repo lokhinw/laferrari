@@ -9,8 +9,18 @@
 }
 
 @font-face {
+    font-family: ProximaSemibold;
+    src: url("../fonts/ProximaNovaSemibold.otf");
+}
+
+@font-face {
     font-family: ProximaBold;
     src: url("../fonts/ProximaNovaBold.otf");
+}
+
+@font-face {
+    font-family: ProximaBlack;
+    src: url("../fonts/ProximaNovaBlack.otf");
 }
 
 body {
@@ -35,6 +45,10 @@ body {
     padding: 30px;
     padding-left: 80px;
     padding-right: 80px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 .navbar-brand>img {
@@ -73,4 +87,27 @@ body {
 
 .navbar-default .navbar-nav>li>a:hover {
     color: #FF0000 !important;
+}
+
+#hero .title {
+    color: #FF0000;
+    font-size: 64px;
+    font-family: ProximaBold;
+    margin-top: -20px;
+}
+
+#hero .description {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-family: ProximaSemibold;
+}
+
+#about {
+    background: url('../img/background-rear.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-position: bottom center;
+    position: relative;
+    overflow: hidden;
 }
