@@ -50,20 +50,27 @@ body {
     font-size: 14px;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: #FF0000;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+.navbar-default .navbar-nav>li>a {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a {
+    background-color: transparent !important;
+    color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav>li.active a {
-    background: transparent;
     border-bottom: 3px solid #FF0000;
     color: #FFFFFF;
 }
 
-.navbar-default .navbar-nav>li.active a:hover {
-    background: transparent;
-    color: #FF0000;
+.navbar-default .navbar-nav>li.active a:focus {
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FF0000 !important;
 }
