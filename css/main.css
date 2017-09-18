@@ -29,6 +29,35 @@ body {
     padding: 0;
 }
 
+@media (min-width: 768px) {
+    .navbar-center {
+        position: absolute;
+        left: 50%;
+        top: 12%;
+        transform: translatex(-50%);
+    }
+}
+
+a:link {
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+a:active {
+    color: #FFFFFF;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 #hero {
     background: url('../img/background.jpg');
     background-size: cover;
@@ -59,7 +88,7 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-    font-family: ProximaBold;
+    font-family: ProximaSemiBold;
     color: #FFFFFF;
     font-size: 14px;
 }
@@ -89,6 +118,12 @@ body {
     color: #FF0000 !important;
 }
 
+#hero .branding {
+    position: absolute !important;
+    bottom: 20px;
+    right: 60px;
+}
+
 #hero .title {
     color: #FF0000;
     font-size: 64px;
@@ -103,11 +138,75 @@ body {
 }
 
 #about {
-    background: url('../img/background-rear.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 80vh;
-    background-position: bottom center;
+    background: #FFFFFF;
+    height: 65vh;
     position: relative;
     overflow: hidden;
+    margin-top: 100px;
+}
+
+#about .ferrari-rear {
+    margin-top: 25px;
+}
+
+#about .overview {
+    color: #FF0000;
+    font-family: ProximaBold;
+    font-size: 14px;
+}
+
+#about .overview-description {
+    color: #404242;
+    font-family: ProximaBold;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+#about .overview-body {
+    color: #747775;
+    font-family: ProximaThin;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+#about .read-more {
+    background: #FF0000;
+    padding: 15px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#about .find-a-dealer {
+    background: #333434;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#awards {
+    background: #252625;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#awards .awards-bar {
+    background: #2A2A2A;
+}
+
+#multimedia {
+    background: #FFFFFF;
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+#multimedia .title {
+    font-family: ProximaSemibold;
+    font-size: 20px;
+    color: #404242;
 }
